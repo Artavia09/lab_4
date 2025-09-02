@@ -1,0 +1,119 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Adrian",
+      "password": "adrian123",
+      "rol": "estudiante"
+    },
+    {
+      "id": 2,
+      "nombre": "Bea",
+      "password": "bea123",
+      "rol": "estudiante"
+    },
+    {
+      "id": 3,
+      "nombre": "alejandro",
+      "password": "alejandro123",
+      "rol": "estudiante"
+    },
+    {
+      "id": 4,
+      "nombre": "kay",
+      "password": "kay123",
+      "rol": "estudiante"
+    },
+    {
+      "id": 99,
+      "nombre": "Admin",
+      "password": "admin123",
+      "rol": "administrador"
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "nombre": "Adrian",
+      "sede": "Central",
+      "computadoraCodigo": "LAB-A-01",
+      "motivo": "Consulta sobre arrays y map()",
+      "fechaInicio": "2025-08-28T09:30:00.000Z",
+      "fechaFin": "2025-08-28T10:00:00.000Z",
+      "createdAt": "2025-08-28T09:25:00.000Z",
+      "estado": "aprobada",
+      "aceptaCondiciones": true,
+      "atendidaEn": "2025-08-31T19:19:29.494Z",
+      "adminNotes": "Atendida desde panel",
+      "aprobadaEn": "2025-09-01T19:39:06.237Z",
+      "aprobadaPor": 99,
+      "fechaAtencion": "12"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "nombre": "Bea",
+      "sede": "Norte",
+      "computadoraCodigo": "LAB-B-07",
+      "motivo": "Error de CORS en fetch",
+      "fechaInicio": "2025-08-28T10:15:00.000Z",
+      "fechaFin": "2025-08-28T10:45:00.000Z",
+      "createdAt": "2025-08-28T10:05:00.000Z",
+      "estado": "atendida",
+      "atendidaEn": "2025-09-01T19:38:40.769Z",
+      "adminNotes": "Atendida desde panel",
+      "aceptaCondiciones": true
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "nombre": "alejandro",
+      "sede": "Central",
+      "computadoraCodigo": "LAB-A-04",
+      "motivo": "Permiso para usar equipo fuera de horario",
+      "fechaInicio": "2025-08-29T18:00:00.000Z",
+      "fechaFin": "2025-08-29T19:30:00.000Z",
+      "createdAt": "2025-08-29T17:40:00.000Z",
+      "estado": "aprobada",
+      "aprobadaEn": "2025-08-29T17:55:00.000Z",
+      "aprobadaPor": 99,
+      "aceptaCondiciones": true,
+      "fechaAtencion": "2025-09-01T17:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "nombre": "adrian",
+      "sede": "la capri",
+      "computadoraCodigo": "1",
+      "motivo": "css",
+      "fechaInicio": "2025-08-31T13:18",
+      "fechaFin": "2025-08-31T13:18",
+      "aceptaCondiciones": true,
+      "createdAt": "2025-08-31T19:18:48.893Z",
+      "estado": "atendida",
+      "id": 4,
+      "atendidaEn": "2025-09-01T19:38:50.176Z",
+      "adminNotes": "Atendida desde panel"
+    },
+    {
+      "userId": 2,
+      "nombre": "kay",
+      "sede": "la capri",
+      "computadoraCodigo": "2",
+      "motivo": "js",
+      "fechaInicio": "2025-09-01T13:35",
+      "fechaFin": "2025-09-01T13:35",
+      "aceptaCondiciones": true,
+      "createdAt": "2025-09-01T19:35:58.438Z",
+      "estado": "aprobada",
+      "id": 5,
+      "aprobadaEn": "2025-09-01T19:38:08.140Z",
+      "aprobadaPor": 99,
+      "fechaAtencion": "12",
+      "rechazadaEn": "2025-09-01T19:37:59.806Z",
+      "rechazadaPor": 99,
+      "adminNotes": "Falta información"
+    }
+  ]
+}

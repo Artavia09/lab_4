@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultas FWD</title>
+  <link rel="stylesheet" href="/public/styles.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <header class="app-header glass">
+    <h1>📚 Consultas FWD</h1>
+    <nav>
+      <a href="#/login">Login</a>
+      <a href="#/cola">Cola</a>
+      <a href="#/stats">Estadísticas</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Login -->
+    <section id="view-login" data-view>
+      <form id="form-login" class="card glass">
+        <h2>Iniciar sesión</h2>
+        <label>ID de usuario
+          <input id="login-user" name="userId" type="number" placeholder="1, 2, 3..." required />
+        </label>
+        <label>Contraseña
+          <input id="login-pass" name="password" type="password" placeholder="••••••••" required />
+        </label>
+        <button class="btn primary" type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <!-- Cola -->
+    <section id="view-cola" data-view class="hidden">
+      <div class="toolbar glass card">
+        <div>Usuario: <strong id="current-user-name">—</strong></div>
+        <div class="filters">
+          <select id="filtro-estado">
+            <option value="pendiente">Pendiente</option>
+            <option value="aprobada">Aprobada</option>
+            <option value="rechazada">Rechazada</option>
+            <option value="atendida">Atendida</option>
+          </select>
+          <input id="filtro-texto" placeholder="Buscar..." />
+        </div>
+      </div>
+
+      <form id="form-nueva" class="card glass">
+        <h2>Nueva Solicitud</h2>
+        <div class="grid">
+          <label>userId <input name="userId" type="number" placeholder="1" required /></label>
+          <label>Nombre <input name="nombre" required /></label>
+          <label>Sede <input name="sede" required /></label>
+          <label>Equipo (código) <input name="computadoraCodigo" required /></label>
+          <label>Motivo <input name="motivo" required /></label>
+          <label>Inicio <input name="fechaInicio" type="datetime-local" required /></label>
+          <label>Fin <input name="fechaFin" type="datetime-local" required /></label>
+          <label class="checkbox"><input type="checkbox" name="aceptaCondiciones" /> Acepto condiciones</label>
+        </div>
+        <button class="btn success" type="submit">Agregar a la cola</button>
+      </form>
+
+      <div id="lista-solicitudes" class="cards"></div>
+    </section>
+
+    <!-- Stats -->
+    <section id="view-stats" data-view class="hidden">
+      <div class="card glass">
+        <button id="stats-refresh" class="btn">Refrescar</button>
+      </div>
+      <div id="stats-container" class="card glass"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer glass">
+    <small>@ ROSYALL_CR</small>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
